@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>年金は「じぶん条件」で決める時代 ─ 株式会社LSFP 加藤博</title>
+<meta name="description" content="年金は受給額ではなく『使えるお金』で考える。平均ではなく、あなたの条件で考える年金・退職金・NISAの設計。初回ご相談（無料・45分・ZOOM）受付中。株式会社LSFP 加藤博。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+JP:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1B2845;
+  --navy-deep: #0F1B33;
+  --navy-soft: #2A3A5E;
+  --gold: #B8924D;
+  --gold-light: #D4B675;
+  --gold-pale: rgba(184, 146, 77, 0.12);
+  --gold-line: rgba(184, 146, 77, 0.3);
+  --paper: #FAFAF7;
+  --paper-warm: #F4F1EA;
+  --text: #1B2845;
+  --text-sub: #5A5A5A;
+  --text-mute: #8A8A8A;
+  --line: rgba(27, 40, 69, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Serif JP", "游明朝", "Yu Mincho", serif;
+  font-weight: 400;
+  background: var(--paper);
+  color: var(--text);
+  line-height: 1.85;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.serif-en {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* ========== HEADER ========== */
+header.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(250, 250, 247, 0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  z-index: 100;
+  padding: 14px 0;
+}
+
+.header-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.08em;
+}
+
+.logo-sub {
+  display: block;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--text-mute);
+  margin-top: 2px;
+}
+
+.header-cta {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12px;
+  color: var(--navy);
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  transition: all 0.3s;
+  letter-spacing: 0.05em;
+}
+
+.header-cta:hover {
+  background: var(--gold);
+  color: var(--paper);
+}
+
+/* ========== HERO ========== */
+.hero {
+  padding: 100px 0 120px;
+  text-align: center;
+  position: relative;
+  background:
+    radial-gradient(ellipse at top, var(--paper-warm) 0%, var(--paper) 60%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 40px;
+  background: var(--gold);
+  opacity: 0.6;
+}
+
+.hero-eyebrow {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.2s forwards;
+}
+
+.hero-title {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.5;
+  color: var(--navy);
+  margin-bottom: 24px;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.4s forwards;
+}
+
+.hero-title .accent {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: var(--text-sub);
+  line-height: 1.9;
+  max-width: 480px;
+  margin: 0 auto 48px;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.6s forwards;
+}
+
+.hero-divider {
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 36px;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.8s forwards;
+}
+
+.hero-context {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 13px;
+  color: var(--text-mute);
+  letter-spacing: 0.08em;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeUp 0.8s 1.0s forwards;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--navy);
+  color: var(--paper);
+  padding: 18px 44px;
+  text-decoration: none;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  border: 1px solid var(--navy);
+  position: relative;
+  transition: all 0.4s;
+  opacity: 0;
+  animation: fadeUp 0.8s 1.2s forwards;
+}
+
+.cta-button::after {
+  content: "→";
+  margin-left: 12px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.cta-button:hover::after {
+  transform: translateX(6px);
+}
+
+.cta-note {
+  display: block;
+  margin-top: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12px;
+  color: var(--text-mute);
+  letter-spacing: 0.05em;
+  opacity: 0;
+  animation: fadeUp 0.8s 1.4s forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== INTRO ========== */
+.intro {
+  padding: 80px 0;
+  background: var(--paper);
+}
+
+.intro-quote {
+  font-size: 17px;
+  line-height: 2.0;
+  color: var(--text);
+  text-align: center;
+  font-weight: 400;
+  padding: 0 12px;
+}
+
+.intro-signature {
+  text-align: right;
+  margin-top: 32px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--text-sub);
+}
+
+.intro-signature span {
+  font-family: "Noto Serif JP", serif;
+  font-style: normal;
+  font-size: 14px;
+  display: block;
+  color: var(--text-mute);
+  margin-top: 4px;
+}
+
+/* ========== STEP SECTION ========== */
+.step {
+  padding: 90px 0;
+  position: relative;
+}
+
+.step:nth-child(even) {
+  background: var(--paper-warm);
+}
+
+.step-number {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 96px;
+  line-height: 1;
+  color: var(--gold);
+  opacity: 0.5;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.step-label {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.step-title {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--navy);
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--gold-line);
+}
+
+.step-body {
+  font-size: 15.5px;
+  line-height: 2.0;
+  color: var(--text);
+}
+
+.step-body p {
+  margin-bottom: 22px;
+}
+
+.step-body strong {
+  font-weight: 600;
+  color: var(--navy);
+  background: linear-gradient(transparent 60%, var(--gold-pale) 60%);
+  padding: 0 2px;
+}
+
+/* ========== COMPARISON TABLE ========== */
+.comparison {
+  margin: 36px 0;
+  background: var(--paper);
+  border: 1px solid var(--gold-line);
+  padding: 28px 24px;
+  position: relative;
+}
+
+.comparison::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  height: 3px;
+  background: var(--gold);
+}
+
+.comparison-title {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-mute);
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 13px;
+}
+
+.comparison-grid > div {
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.comparison-grid > div:nth-child(-n+3) {
+  font-weight: 600;
+  color: var(--navy);
+  text-align: center;
+  border-bottom: 1px solid var(--gold);
+  font-size: 12px;
+}
+
+.comparison-grid > div:nth-child(3n+1) {
+  color: var(--text-sub);
+  font-size: 12px;
+}
+
+.comparison-grid > div:nth-child(3n+2),
+.comparison-grid > div:nth-child(3n+3) {
+  text-align: right;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.comparison-highlight {
+  background: var(--gold-pale);
+}
+
+.comparison-highlight .label,
+.comparison-grid .comparison-highlight {
+  font-weight: 700 !important;
+  color: var(--navy) !important;
+}
+
+.comparison-note {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 11px;
+  color: var(--text-mute);
+  margin-top: 14px;
+  text-align: right;
+  letter-spacing: 0.05em;
+}
+
+/* ========== PULL QUOTE ========== */
+.pullquote {
+  margin: 40px 0;
+  padding: 28px 32px;
+  border-left: 3px solid var(--gold);
+  background: var(--paper);
+  font-family: "Noto Serif JP", serif;
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--navy);
+  font-weight: 500;
+}
+
+.pullquote::before {
+  content: """;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  color: var(--gold);
+  line-height: 0;
+  vertical-align: -20px;
+  margin-right: 4px;
+}
+
+/* ========== THREE PERSPECTIVES ========== */
+.perspectives {
+  margin: 32px 0;
+  display: grid;
+  gap: 16px;
+}
+
+.perspective-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px dashed var(--gold-line);
+}
+
+.perspective-num {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 32px;
+  color: var(--gold);
+  line-height: 1;
+  font-weight: 500;
+  flex-shrink: 0;
+  width: 36px;
+}
+
+.perspective-text {
+  font-size: 14.5px;
+  line-height: 1.8;
+}
+
+.perspective-text strong {
+  display: block;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.perspective-text .conclusion {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+/* ========== CONNECTED ELEMENTS ========== */
+.connected {
+  margin: 28px 0;
+  padding: 24px;
+  background: var(--navy);
+  color: var(--paper);
+  position: relative;
+  overflow: hidden;
+}
+
+.connected::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: var(--gold);
+  opacity: 0.1;
+  transform: rotate(45deg) translate(40px, -40px);
+}
+
+.connected-title {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--gold-light);
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.connected-list {
+  list-style: none;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  line-height: 2.0;
+}
+
+.connected-list li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.connected-list li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 10px;
+  top: 2px;
+}
+
+/* ========== CTA SECTION ========== */
+.cta-section {
+  background: var(--navy);
+  color: var(--paper);
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--gold) 0%, transparent 60%);
+  opacity: 0.08;
+}
+
+.cta-eyebrow {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--gold-light);
+  letter-spacing: 0.15em;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.cta-title {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.cta-divider {
+  width: 50px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 32px;
+  position: relative;
+}
+
+.cta-description {
+  font-size: 15px;
+  line-height: 2.0;
+  max-width: 480px;
+  margin: 0 auto 40px;
+  opacity: 0.9;
+  position: relative;
+}
+
+.cta-details {
+  max-width: 460px;
+  margin: 0 auto 48px;
+  text-align: left;
+  position: relative;
+  border-top: 1px solid rgba(184, 146, 77, 0.3);
+  border-bottom: 1px solid rgba(184, 146, 77, 0.3);
+  padding: 24px 0;
+}
+
+.cta-detail-row {
+  display: flex;
+  gap: 20px;
+  padding: 8px 0;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 13.5px;
+}
+
+.cta-detail-label {
+  color: var(--gold-light);
+  min-width: 80px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.cta-detail-value {
+  color: var(--paper);
+  flex: 1;
+}
+
+.cta-button-large {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 22px 56px;
+  text-decoration: none;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  position: relative;
+  transition: all 0.4s;
+  border: 1px solid var(--gold);
+}
+
+.cta-button-large::after {
+  content: "→";
+  margin-left: 16px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.cta-button-large:hover {
+  background: var(--gold-light);
+  border-color: var(--gold-light);
+}
+
+.cta-button-large:hover::after {
+  transform: translateX(8px);
+}
+
+.cta-note-bottom {
+  display: block;
+  margin-top: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12px;
+  color: var(--gold-light);
+  letter-spacing: 0.08em;
+  position: relative;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: var(--navy-deep);
+  color: var(--paper);
+  padding: 60px 0 40px;
+}
+
+.footer-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.footer-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--gold-light);
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.footer-name-jp {
+  font-size: 16px;
+  margin-bottom: 24px;
+  color: var(--paper);
+  font-weight: 500;
+}
+
+.footer-credentials {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12.5px;
+  line-height: 2.0;
+  color: rgba(250, 250, 247, 0.75);
+  margin-bottom: 32px;
+  letter-spacing: 0.03em;
+}
+
+.footer-company {
+  border-top: 1px solid rgba(184, 146, 77, 0.2);
+  padding-top: 24px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12px;
+  line-height: 1.9;
+  color: rgba(250, 250, 247, 0.6);
+}
+
+.footer-company strong {
+  color: var(--gold-light);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.footer-bottom {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(184, 146, 77, 0.15);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 11px;
+  text-align: center;
+  color: rgba(250, 250, 247, 0.4);
+  letter-spacing: 0.1em;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 22px;
+  }
+
+  .header-inner {
+    padding: 0 22px;
+  }
+
+  .hero {
+    padding: 70px 0 90px;
+  }
+
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+
+  .hero-subtitle {
+    font-size: 14.5px;
+  }
+
+  .cta-button {
+    padding: 16px 32px;
+    font-size: 13px;
+  }
+
+  .step {
+    padding: 70px 0;
+  }
+
+  .step-number {
+    font-size: 72px;
+  }
+
+  .step-title {
+    font-size: 21px;
+  }
+
+  .step-body {
+    font-size: 14.5px;
+  }
+
+  .comparison {
+    padding: 20px 16px;
+  }
+
+  .comparison-grid {
+    font-size: 11px;
+  }
+
+  .comparison-grid > div:nth-child(3n+2),
+  .comparison-grid > div:nth-child(3n+3) {
+    font-size: 14px;
+  }
+
+  .pullquote {
+    padding: 22px 24px;
+    font-size: 15px;
+  }
+
+  .cta-section {
+    padding: 80px 0;
+  }
+
+  .cta-title {
+    font-size: 24px;
+  }
+
+  .cta-button-large {
+    padding: 18px 36px;
+    font-size: 14px;
+  }
+
+  .cta-detail-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .cta-detail-label {
+    min-width: auto;
+    font-size: 12px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      LSFP
+      <span class="logo-sub">KATO HIROSHI</span>
+    </div>
+    <a href="#cta" class="header-cta">初回ご相談を予約</a>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">Retirement Design Studio</div>
+    <h1 class="hero-title">
+      年金は「<span class="accent">じぶん条件</span>」で<br>決める時代へ。
+    </h1>
+    <p class="hero-subtitle">
+      平均ではなく、あなたの条件で考える。<br>
+      老後資金の設計で、私が最も大切にしている<br>
+      一つの考え方をお伝えします。
+    </p>
+    <div class="hero-divider"></div>
+    <div class="hero-context">LSFP &nbsp;|&nbsp; KATO HIROSHI</div>
+    <a href="#cta" class="cta-button">初回ご相談を予約する（無料・45分）</a>
+    <span class="cta-note">※ご予約はGoogleカレンダーから直接お取りいただけます</span>
+  </div>
+</section>
+
+<!-- ========== INTRO ========== -->
+<section class="intro">
+  <div class="container">
+    <p class="intro-quote">
+      老後資金の設計について<br>
+      私がお話しするとき、最初にお伝えするのは<br>
+      たった一つのことです。<br><br>
+      ──年金は「もらい方」ではなく、<br>
+      「使えるお金」で考える。
+    </p>
+    <p class="intro-signature">
+      Kato Hiroshi
+      <span>株式会社LSFP 代表取締役</span>
+    </p>
+  </div>
+</section>
+
+<!-- ========== STEP 1 ========== -->
+<section class="step" id="step1">
+  <div class="container">
+    <div class="step-number serif-en">01</div>
+    <div class="step-label">The First Insight</div>
+    <h2 class="step-title">「使えるお金」という考え方</h2>
+    <div class="step-body">
+      <p>
+        年金は、受給額そのものではなく、<strong>税金と社会保険料を引いたあとに残る「使えるお金」</strong>で比べる。これが私が老後資金の設計で最も大切にしている考え方です。
+      </p>
+      <p>
+        多くの方が「年金は繰下げると増える」とご存知です。確かに、月々の受給額だけを見れば繰下げが有利に見えます。しかし、年金は<strong>課税収入</strong>です。受給額が増えれば、所得税・住民税・健康保険料・介護保険料も連動して増えていきます。
+      </p>
+
+      <div class="comparison">
+        <div class="comparison-title">─ 65歳時点での比較（年額・税引後） ─</div>
+        <div class="comparison-grid">
+          <div></div>
+          <div>Aさん<br><span style="font-size:11px;font-weight:400;color:var(--text-mute)">60歳繰上げ</span></div>
+          <div>Bさん<br><span style="font-size:11px;font-weight:400;color:var(--text-mute)">65歳受給</span></div>
+
+          <div class="label">年金額</div>
+          <div>1,368,000</div>
+          <div>1,800,000</div>
+
+          <div class="label">可処分所得</div>
+          <div>1,203,600</div>
+          <div>1,622,600</div>
+
+          <div class="label">新NISA収益</div>
+          <div>468,000</div>
+          <div>0</div>
+
+          <div class="label comparison-highlight">使えるお金</div>
+          <div class="comparison-highlight">1,671,600</div>
+          <div class="comparison-highlight">1,622,600</div>
+        </div>
+        <div class="comparison-note">単位：円 / 仙台市・令和7年度料率で試算</div>
+      </div>
+
+      <p>
+        Aさんは60歳から年金を受け取り、その年金を65歳まで新NISAで積み立てます（年利6%想定）。65歳時点でのNISA残高は<strong>約792万円</strong>。
+      </p>
+      <p>
+        結果、65歳以降に「使えるお金」は、AさんがBさんを上回ります。年金そのものを比べると繰下げが有利。しかし「使えるお金」で比べると繰上げが優れることがある──。これが、見方を変えることで生まれる差です。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STEP 2 ========== -->
+<section class="step" id="step2">
+  <div class="container">
+    <div class="step-number serif-en">02</div>
+    <div class="step-label">The Hidden Problem</div>
+    <h2 class="step-title">「専門家不在の分野」という現実</h2>
+    <div class="step-body">
+      <p>
+        ここで、不思議なことが起きます。同じ人の同じ条件で計算しても、<strong>判断軸を変えるだけで答えが3つに分かれる</strong>のです。
+      </p>
+
+      <div class="perspectives">
+        <div class="perspective-item">
+          <div class="perspective-num serif-en">1</div>
+          <div class="perspective-text">
+            <strong>年金の受給額だけで判断すると</strong>
+            繰下げ受給が最も有利に見えます。
+            <span class="conclusion">→ Conclusion: 繰下げ推奨</span>
+          </div>
+        </div>
+        <div class="perspective-item">
+          <div class="perspective-num serif-en">2</div>
+          <div class="perspective-text">
+            <strong>平均寿命で損益分岐を判断すると</strong>
+            繰上げは長生きすると損だから避けるべき、となります。
+            <span class="conclusion">→ Conclusion: 繰上げNG</span>
+          </div>
+        </div>
+        <div class="perspective-item">
+          <div class="perspective-num serif-en">3</div>
+          <div class="perspective-text">
+            <strong>税・社保・新NISAを総合して判断すると</strong>
+            繰上げ＋運用が最も有利という結論になります。
+            <span class="conclusion">→ Conclusion: 繰上げ有利</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pullquote">
+        同じ条件、同じ人。<br>
+        なのに、見方を変えるだけで答えが3つに分かれる。<br>
+        これが、私が「専門家不在の分野」と呼んでいる現実です。
+      </div>
+
+      <p>
+        実は、年金の「もらい方」だけを単独で最適化することはできません。次の4つは、すべて連動しています。
+      </p>
+
+      <div class="connected">
+        <div class="connected-title">Four Interconnected Elements</div>
+        <ul class="connected-list">
+          <li>公的年金（繰上げ・繰下げの選択）</li>
+          <li>退職金・確定拠出年金（DC・iDeCo）の受取方</li>
+          <li>新NISAの活用と取り崩し設計</li>
+          <li>健康保険料・介護保険料の負担</li>
+        </ul>
+      </div>
+
+      <p>
+        どこか一箇所だけ最適化しても、別のところで取り戻されてしまう。全体を一枚の絵にする視点──これが、税理士からも、社労士からも、金融機関の窓口からも、なかなか出てこない。だからこそ私は<strong>「老娯資金最大化プランナー」</strong>という立ち位置で仕事をしています。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STEP 3 ========== -->
+<section class="step" id="step3">
+  <div class="container">
+    <div class="step-number serif-en">03</div>
+    <div class="step-label">Your Own Design</div>
+    <h2 class="step-title">「じぶん条件」で設計するために</h2>
+    <div class="step-body">
+      <p>
+        ここでお見せしたAさん・Bさんの数字は、<strong>あくまで一例</strong>です。あなたの年齢、年収、退職金、DC・iDeCoの残高、配偶者の状況、お持ちのNISA口座、お住まいの自治体の保険料率──これらすべてが、最適解を変えます。
+      </p>
+      <p>
+        「じぶん条件」で計算すると、別の景色が見えてくることがあります。繰上げが向いている方もいれば、繰下げが向いている方もいる。重要なのは「正解」ではなく、「あなたにとっての最適解」です。
+      </p>
+      <div class="pullquote">
+        この45分は、売り込みのための時間ではありません。<br>
+        「あなたの条件で、何を確認すべきか」を一緒に整理する。<br>
+        いわば、地図を一枚作る作業です。
+      </div>
+      <p>
+        ZOOMでお話ししながら、現在のご状況を伺い、関心のあるテーマ（年金繰上げ・NISA取崩し・DC受取）を整理し、今後のステップをご提案します。
+      </p>
+      <p>
+        この初回ご相談は<strong>無料</strong>です。内容を聞いていただいたうえで、本格的なコンサルティング（2回目以降は有料）に進むかどうかは、その場で即断いただく必要はありません。お互いに「ご一緒できそうか」を確認するための時間とお考えください。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta-section" id="cta">
+  <div class="container">
+    <div class="cta-eyebrow">─ Initial Consultation ─</div>
+    <h2 class="cta-title">
+      初回ご相談<br>
+      無料・45分のZOOMミーティング
+    </h2>
+    <div class="cta-divider"></div>
+    <p class="cta-description">
+      まずは45分のZOOMで、ご状況をお伺いします。<br>
+      内容を聞いてから、本相談に進むかをお決めいただけます。<br>
+      その場での即断は不要です。
+    </p>
+
+    <div class="cta-details">
+      <div class="cta-detail-row">
+        <div class="cta-detail-label">形式</div>
+        <div class="cta-detail-value">ZOOMによるオンライン</div>
+      </div>
+      <div class="cta-detail-row">
+        <div class="cta-detail-label">時間</div>
+        <div class="cta-detail-value">45分</div>
+      </div>
+      <div class="cta-detail-row">
+        <div class="cta-detail-label">費用</div>
+        <div class="cta-detail-value">初回のみ無料／2回目以降は有料コンサルティング</div>
+      </div>
+      <div class="cta-detail-row">
+        <div class="cta-detail-label">内容</div>
+        <div class="cta-detail-value">現状ヒアリング／関心テーマの整理／今後のステップのご提案</div>
+      </div>
+      <div class="cta-detail-row">
+        <div class="cta-detail-label">ご準備</div>
+        <div class="cta-detail-value">ねんきん定期便（あれば）／退職金・DC・iDeCoの大まかな金額</div>
+      </div>
+    </div>
+
+    <a href="https://calendar.app.google/MBWMxKdFUuyaCqs49" class="cta-button-large" id="reservation-link" target="_blank" rel="noopener noreferrer">予約カレンダーを開く</a>
+    <span class="cta-note-bottom">Googleカレンダーで空き時間をご確認いただけます</span>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-name">KATO HIROSHI</div>
+    <div class="footer-name-jp">加藤 博（かとう ひろし）</div>
+    <div class="footer-credentials">
+      日本FP協会会員 CFP®<br>
+      1級ファイナンシャル・プランニング技能士<br>
+      DCプランナー1級（企業年金総合プランナー）<br>
+      家族信託普及協会認定 家族信託コーディネーター<br>
+      日本証券業協会 一種外務員
+    </div>
+    <div class="footer-company">
+      <strong>株式会社LSFP</strong><br>
+      代表取締役 加藤 博<br>
+      r-Laboratory株式会社 所属 IFA<br>
+      <br>
+      慶應義塾大学商学部卒。1990年安田火災海上保険入社。<br>
+      コンサルティング会社・保険ショップFCチェーン本部代表を経て、<br>
+      2013年11月にFP会社・株式会社LSFPを設立。<br>
+      老後資金の出口設計（年金・退職金・DC・NISA）を専門領域とする。
+    </div>
+    <div class="footer-bottom">
+      © 2026 LSFP Co., Ltd. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
